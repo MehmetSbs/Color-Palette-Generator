@@ -1,0 +1,38 @@
+.title {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+}
+
+.copyright {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+#colorBox {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+
+    margin-top: 100px;
+}
+
+.btn {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    margin-top: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: blueviolet;
+    transition: 2 ease-in-out;
+}
