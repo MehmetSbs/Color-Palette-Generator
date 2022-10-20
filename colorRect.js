@@ -14,7 +14,7 @@ class colorRect{
 
     drawCanvas(){
         this.context.rect(0, 0, this.canvas.width, this.canvas.height);
-        this.context.fillStyle = "cyan";
+        this.context.fillStyle = "white";
         this.context.fill();
     }
 
