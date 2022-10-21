@@ -1,50 +1,27 @@
-class colorRect{
+class colorRect extends colorAbstract{
     constructor(){
-        this.canvas = document.getElementById("colorBox");
-        this.context = this.canvas.getContext("2d");
-    }
+        super();
+        this.div = document.querySelector(".colorDiv");
+        this.colorDiv1 = document.querySelector(".colorDiv1");
+        this.colorDiv2 = document.querySelector(".colorDiv2");
+        this.colorDiv3 = document.querySelector(".colorDiv3");
+        this.colorDiv4 = document.querySelector(".colorDiv4");
 
-    init(){
-        this.drawCanvas();
-        this.drawRect(1,this.hexGenerator());
-        this.drawRect(2,this.hexGenerator());
-        this.drawRect(3,this.hexGenerator());
-        this.drawRect(4,this.hexGenerator());
-    }
+        this.hexDiv1 = document.querySelector(".hexShow1");
+        this.hexDiv2 = document.querySelector(".hexShow2");
+        this.hexDiv3 = document.querySelector(".hexShow3");
+        this.hexDiv4 = document.querySelector(".hexShow4");
 
-    drawCanvas(){
-        this.context.rect(0, 0, this.canvas.width, this.canvas.height);
-        this.context.fillStyle = "white";
-        this.context.fill();
-    }
+        this.divCircle = document.querySelector(".colorDivCircle");
+        this.colorDiv1Circle = document.querySelector(".colorDivCircle1");
+        this.colorDiv2Circle = document.querySelector(".colorDivCircle2");
+        this.colorDiv3Circle = document.querySelector(".colorDivCircle3");
+        this.colorDiv4Circle = document.querySelector(".colorDivCircle4");
 
-    drawRect(num, str){
-        this.context.fillStyle = str;
-        if (num == 1) {
-            this.context.fillRect(0, 0, 400, 100);
-        }
-        else if(num == 2) {
-            this.context.fillRect(0, 100, 400, 100);
-        } 
-        else if(num == 3) {
-            this.context.fillRect(0, 200, 400, 100);
-        } 
-        else if(num == 4) {
-            this.context.fillRect(0, 300, 400, 100);
-        } 
-
+        this.hexDiv1Circle = document.querySelector(".hexShow1");
+        this.hexDiv2Circle = document.querySelector(".hexShow2");
+        this.hexDiv3Circle = document.querySelector(".hexShow3");
+        this.hexDiv4Circle = document.querySelector(".hexShow4");
     }
-
-    hexGenerator(){
-        const hexaDecimals = ['0','1','2','3','4','5','6','7',
-                            '8','9','A','B','C','D','E','F'];
-        var hexCode = "#"+ hexaDecimals[Math.floor(Math.random() * hexaDecimals.length)]
-        + hexaDecimals[Math.floor(Math.random() * hexaDecimals.length)]
-        +hexaDecimals[Math.floor(Math.random() * hexaDecimals.length)]
-        +hexaDecimals[Math.floor(Math.random() * hexaDecimals.length)]
-        +hexaDecimals[Math.floor(Math.random() * hexaDecimals.length)]
-        +hexaDecimals[Math.floor(Math.random() * hexaDecimals.length)];
-        console.log(hexCode);
-        return hexCode;
-    }
+    
 };

@@ -1,0 +1,37 @@
+.colorDiv {
+    position: absolute;
+    left: 20%;
+    margin-top: 150px;
+    border-radius: 10px;
+    width: var(--w);
+}
+
+.colorDivGeneral {
+    width: var(--w);
+    height: var(--h);
+}
+
+.colorDiv1 {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.colorDiv4 {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.hexShow {
+    font-family: 'Open Sans', sans-serif;
+    opacity: 30%;
+    width: 75px;
+    position: relative;
+    top: 8%;
+    left: 2%;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 6px;
+}
+
+.hexShow:hover {
+    cursor: pointer;
+    opacity: 100%;
+}

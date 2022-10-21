@@ -5,15 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="rect.css">
+    <link rel="stylesheet" href="circle.css">
     <link rel="import" href="links.html">
     <title>Document</title>
 </head>
 <body>
-    <h1 class="title">Random Color Palete Generetor</h1>
+    <h1 class="title">Random Color Palette Generetor</h1>
     <button class="btn">Generate</button>
-    <h6 class="copyright">©Mehmet Subaşı 2022 </h6>
-    <canvas id="colorBox" width="400" height="400"></canvas>
+    <h5 class="copyright">©Mehmet Subaşı 2022 </h5>
+    <div class="colorDiv">
+        <div class="colorDivGeneral colorDiv1">
+            <div class="hexShow hexShow1" onclick="copy(1)">
+            </div>
+        </div>
+        <div class="colorDivGeneral colorDiv2">
+            <div class="hexShow hexShow2" onclick="copy(2)"></div>
+        </div>
+        <div class="colorDivGeneral colorDiv3">
+            <div class="hexShow hexShow3" onclick="copy(3)"></div>
+        </div>
+        <div class="colorDivGeneral colorDiv4">
+            <div class="hexShow hexShow4" onclick="copy(4)"></div>
+        </div>
+    </div>
+    <div class="colorDivCircle">
+        <div class="colorDivCircleGeneral colorDivCircle1"></div>
+        <div class="colorDivCircleGeneral colorDivCircle2"></div>
+        <div class="colorDivCircleGeneral colorDivCircle3"></div>
+        <div class="colorDivCircleGeneral colorDivCircle4"></div>
+    </div>
+
+    <script src="colorAbstract.js"></script>
     <script src="colorRect.js"></script>
+    <script src="colorCircle.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

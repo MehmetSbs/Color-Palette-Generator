@@ -1,3 +1,17 @@
+:root {
+    --w: 400px;
+    --h: calc(var(--w)/4);
+    --r: 400px;
+}
+
+body {
+    background: url("background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode:screen;
+    height: 100vh;
+}
+
 .title {
     text-align: center;
     font-family: 'Open Sans', sans-serif;
@@ -11,15 +25,9 @@
     transform: translate(-50%,0);
 }
 
-#colorBox {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%,0);
-
-    margin-top: 100px;
-}
 
 .btn {
+    background-color: #FF99D7;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     margin-top: 20px;
@@ -33,6 +41,7 @@
 
 .btn:hover {
     cursor: pointer;
-    background-color: blueviolet;
+    background-color: #D58BDD;
     transition: 2 ease-in-out;
 }
+

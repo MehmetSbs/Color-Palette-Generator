@@ -1,0 +1,35 @@
+.colorDivCircle {
+    position: absolute;
+    right: 20%;
+    margin-top: 150px;
+    border-radius: 10px;
+    width: var(--w);
+    height: var(--w);
+}
+
+.colorDivCircleGeneral {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: var(--w);
+    height: var(--w);
+    border-radius: 50%;
+}
+
+.colorDivCircle1 {
+    width: calc(var(--r));
+    height: calc(var(--r));
+}
+.colorDivCircle2 {
+    width: calc(var(--r)/3*2);
+    height: calc(var(--r)/3*2);
+}
+.colorDivCircle3 {
+    width: calc(var(--r)/5*2);
+    height: calc(var(--r)/5*2);
+}
+.colorDivCircle4 {
+    width: calc(var(--r)/5);
+    height: calc(var(--r)/5);
+}
